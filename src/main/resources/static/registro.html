@@ -117,7 +117,7 @@
         <h1>Crear cuenta</h1>
         <hr />
         <div class="mt-5">
-          <form class="col-5 mx-auto">
+          <form class="col-5 mx-auto" action="/register">
             <div class="form-group">
               <label for="name">Nombre</label>
               <input class="form-control" type="text" name="name" required/>
@@ -135,17 +135,17 @@
               <div>
                 <div class="form-check-inline">
                   <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="sex" value="male">Masculino
+                    <input type="radio" class="form-check-input" name="gender" value="MALE">Masculino
                   </label>
                 </div>
                 <div class="form-check-inline">
                   <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="sex" value="female">Femenino
+                    <input type="radio" class="form-check-input" name="gender" value="FEMALE">Femenino
                   </label>
                 </div>
                 <div class="form-check-inline">
                   <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="sex" value="other" checked>Otro
+                    <input type="radio" class="form-check-input" name="gender" value="OTHER" checked>Otro
                   </label>
                 </div>
               </div>

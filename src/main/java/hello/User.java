@@ -6,13 +6,15 @@ public class User {
     private final String lastName;
     private final int age;
     private final Gender gender;
+    private final String email;
     private final String password;
 
-    public User(String name, String lastName, int age, Gender gender, String password) {
+    public User(String name, String lastName, int age, Gender gender, String email, String password) {
         this.name = name;
         this.lastName = lastName;
         this.age = age;
         this.gender = gender;
+        this.email = email;
         this.password = password;
     }
 
@@ -30,6 +32,10 @@ public class User {
     
     public Gender getGender() {
     	return this.gender;
+    }
+    
+    public String getEmail() {
+    	return this.email;
     }
     
     public String getPassword() {
