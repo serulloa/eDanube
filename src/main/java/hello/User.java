@@ -1,13 +1,22 @@
 package hello;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class User {
 	
-    private final String name;
-    private final String lastName;
-    private final int age;
-    private final Gender gender;
-    private final String email;
-    private final String password;
+    private String name;
+    private String lastName;
+    private int age;
+    private Gender gender;
+    @Id
+    private String email;
+    private String password;
+    
+    public User() {
+    	super();
+    }
 
     public User(String name, String lastName, int age, Gender gender, String email, String password) {
         this.name = name;
